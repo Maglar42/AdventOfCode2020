@@ -8,7 +8,7 @@ namespace AdventOfCode2020
     {
         static void Main(string[] args)
         {
-            var answer = Day2.Run();
+            var answer = Day3.Run();
 
             Console.WriteLine($"Answer is {answer}");
             Console.ReadLine();
