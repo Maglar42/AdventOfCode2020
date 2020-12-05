@@ -5,9 +5,9 @@ using System.Linq;
 namespace AdventOfCode2020
 {
     // https://adventofcode.com/2020/day/3
-    public static class Day3
+    public class Day3
     {
-        public static string Run()
+        public string Run()
         {
             var fullInput = InputHelper.ReadOutEachLine("Day3Input");
             var coursePattern = new List<List<bool>>();

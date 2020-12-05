@@ -16,7 +16,16 @@ namespace AdventOfCode2020
             return data;
         }
 
-
+        public static bool TryGetInt(this IDictionary<string, string> self, string keyToFind, out int parsedValue)
+        {
+            if (self.TryGetValue(keyToFind, out var valueAsString) && int.TryParse(valueAsString, out var valueAsint))
+            {
+                parsedValue = valueAsint;
+                return true;
+            }
+            parsedValue = 0;
+            return false;
+        }
 
     }
 }

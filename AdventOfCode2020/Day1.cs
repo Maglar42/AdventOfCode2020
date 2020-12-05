@@ -3,9 +3,9 @@
 namespace AdventOfCode2020
 {
     // https://adventofcode.com/2020/day/1
-    public static class Day1
+    public class Day1
     {
-        public static string Run()
+        public string Run()
         {
             var data1 = InputHelper.ReadOutEachLine("Day1Input");
             var data2 = InputHelper.ReadOutEachLine("Day1Input");
