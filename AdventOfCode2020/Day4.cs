@@ -8,7 +8,6 @@ namespace AdventOfCode2020
     // Note only solveing part 2 right now.
     public class Day4
     {
-
         private IList<string> data;
 
         private IList<Dictionary<string, string>> passports = new List<Dictionary<string, string>>();
