@@ -5,6 +5,7 @@ using System.Text.RegularExpressions;
 namespace AdventOfCode2020
 {
     // https://adventofcode.com/2020/day/4
+    // Note only solveing part 2 right now.
     public class Day4
     {
 
@@ -48,11 +49,7 @@ namespace AdventOfCode2020
         }
 
         private void ReviewPassport(Dictionary<string, string> currentItem)
-        {            
-
-
-             
-
+        {
             bool vaild = true;
 
             // byr (Birth Year) - four digits; at least 1920 and at most 2002.
@@ -128,29 +125,11 @@ namespace AdventOfCode2020
             }
 
             //* pid (Passport ID) - a nine-digit number, including leading zeroes.
-            Regex passportIdRegex = new Regex(@"^[0-9]+$");
+            Regex passportIdRegex = new Regex(@"^[0-9]{9}$");
             if(!currentItem.TryGetValue("pid", out var passPortId) || !passportIdRegex.IsMatch(passPortId))
             {
                 vaild = false;
             }
-
-
-            
-
-            // cid (Country ID) - ignored, missing or not.
-            // currentItem.ContainsKey("cid")
-
-
-            //var vaild =
-            //    currentItem.ContainsKey() &&
-            //    currentItem.ContainsKey("") &&
-            //    currentItem.ContainsKey("") &&
-            //    currentItem.ContainsKey("hcl") &&
-            //    currentItem.ContainsKey("") &&
-            //    currentItem.ContainsKey("pid");
-
-            // optional
-
 
             this.vaildPassports += vaild ? 1 : 0;
 
