@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace AdventOfCode2020
 {
     public class MainRunner
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            var dayToRun = new Day5();
+            var dayToRun = new Day6();
             var answer = dayToRun.Run();
 
             Console.WriteLine($"Answer for {dayToRun.GetType().Name} is {answer}");
