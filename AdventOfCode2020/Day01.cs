@@ -3,7 +3,7 @@
 namespace AdventOfCode2020
 {
     // https://adventofcode.com/2020/day/1
-    public class Day1
+    public class Day01
     {
         public string Run()
         {

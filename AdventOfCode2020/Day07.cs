@@ -6,7 +6,7 @@ using System.Text;
 namespace AdventOfCode2020
 {
     // https://adventofcode.com/2020/day/7
-    public class Day7
+    public class Day07
     {
         public string Run()
         {

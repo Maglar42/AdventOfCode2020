@@ -5,7 +5,7 @@ using System.Linq;
 namespace AdventOfCode2020
 {
     // https://adventofcode.com/2020/day/3
-    public class Day3
+    public class Day03
     {
         public string Run()
         {

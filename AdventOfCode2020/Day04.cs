@@ -6,7 +6,7 @@ namespace AdventOfCode2020
 {
     // https://adventofcode.com/2020/day/4
     // Note only solveing part 2 right now.
-    public class Day4
+    public class Day04
     {
         private IList<string> data;
 

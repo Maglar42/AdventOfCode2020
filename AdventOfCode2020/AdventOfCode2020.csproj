@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Inputs\Day11Input.txt" />
+    <None Remove="Inputs\Day12Input.txt" />
     <None Remove="Inputs\Day1Input.txt" />
     <None Remove="Inputs\Day2Input.txt" />
     <None Remove="Inputs\Day3Input.txt" />
@@ -14,9 +16,16 @@
     <None Remove="Inputs\Day6Input.txt" />
     <None Remove="Inputs\Day7Input.txt" />
     <None Remove="Inputs\Day8Input.txt" />
+    <None Remove="Inputs\Day9Input.txt" />
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Inputs\Day11Input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\Day12Input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Inputs\Day1Input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -39,6 +48,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Inputs\Day8Input.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Inputs\Day9Input.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
